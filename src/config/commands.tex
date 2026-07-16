@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% The commands below are intended for end users.
+%
+% Do not modify command signatures without
+% incrementing the framework version.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\cvSection}[1]
+{
+    \vspace{\cvVerticalSeparator}
+
+    \noindent
+    {\Large\bfseries #1}
+
+    \vspace{0.2em}
+
+    \hrule
+
+    \vspace{\cvVerticalSeparator}
+}
+
+\newcommand{\cvName}[1]
+{
+    \begin{center}
+        {\Huge\bfseries #1}
+    \end{center}
+}
+
+\newcommand{\cvSubtitle}[1]
+{
+    \begin{center}
+        {\large #1}
+    \end{center}
+
+    \vspace{\cvVerticalSeparator}
+}
+
+
+
+% \cvContact {Top Left} {Bottom Left} {Top Right} {Bottom Right}
+\newcommand{\cvContact}[4]
+{
+    \begin{center}
+        \begin{tabular*}{0.90\textwidth}{@{\extracolsep{\fill}}ll}
+            #1 & #3 \\
+            #2 & #4
+        \end{tabular*}
+    \end{center}
+
+    \vspace{\cvVerticalSeparator}
+}
+
+\newcommand{\cvSummary}[1]
+{
+    \begin{itemize}[leftmargin=\cvLeftMargin,nosep]
+    \cvItem[] #1
+    \end{itemize}
+
+    \vspace{\cvVerticalSeparator}
+}
+
+\newcommand{\cvItem}[1]
+{
+    \item #1
+}
+
+\newcommand{\cvSkillCategory}[2]
+{
+    \noindent
+    \textbf{#1}
+
+    \smallskip
+    \begin{itemize}[leftmargin=\cvLeftMargin,nosep]
+    \cvItem[] #2
+    \end{itemize}
+
+    \vspace{\cvVerticalSeparator}
+}
+
+\newcommand{\cvLanguage}[2]
+{
+    \noindent
+    \textbf{#1}
+    \hfill
+    #2
+
+    \par
+}
+
+% \cvExperience {ExpName} {Timeframe} {Intitution/Organization} {City/Location} {Details}
+\newcommand{\cvExperience}[5]
+{
+    \noindent
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+
+        \textbf{#1} & #4 \\
+
+        \textit{#2} & #3
+
+    \end{tabular*}
+
+    \begin{itemize}
+
+        #5
+
+    \end{itemize}
+
+    \vspace{\cvVerticalSeparator}
+}
+
+\newcommand{\cvEducation}[5]
+{
+    \noindent
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+
+        \textbf{#1} & #4 \\
+
+        \textit{#2} & #3
+
+    \end{tabular*}
+
+    \smallskip
+
+    \begin{itemize}[leftmargin=\cvLeftMargin,nosep]
+
+    \cvItem[] #5
+
+    \end{itemize}
+
+    \vspace{\cvVerticalSeparator}
+}
+
+\newcommand{\cvProject}[5]
+{
+    \noindent
+
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lr}
+        \textbf{#1} & \href{#4}{Repositorio}
+    \end{tabular*}
+
+    \smallskip
+
+    \begin{itemize}[leftmargin=\cvLeftMargin]
+
+    \cvItem[] #2
+
+    \cvItem[] #3
+
+    \cvItem[] #5
+
+    \end{itemize}
+
+    \vspace{\cvVerticalSeparator}
+}
+
+
+
+
