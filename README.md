@@ -15,4 +15,4 @@ This is an utility meant for constructing a Curriculum Vitae through tex file fo
 | `\cvSkillCategory` | A custom section, for displaying what you have learned due to studies, courses or certificates.              |
 | `\cvLanguage`      | A custom section, for displaying languages that you have learned           |
 
-For details on how to utilize them, head to `src/DETAILS.md`
+For details on how to utilize them, head to `DETAILS.md`
