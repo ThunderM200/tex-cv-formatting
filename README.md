@@ -28,7 +28,7 @@ To build up your CV document you are to fill in the components in `src/sections`
 
 # If you have a tex compiler.
 
-In order to compile the document you require to have a tex compiler installed locally. If you have one, you can run:
+In order to compile the document you need to have a tex compiler installed locally. If you have one, you can run:
 
 ```bash
 bash document-compile.sh
